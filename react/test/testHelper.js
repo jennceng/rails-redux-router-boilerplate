@@ -1,15 +1,20 @@
 import { shallow, mount } from 'enzyme';
 import jasmineEnzyme from 'jasmine-enzyme';
 import React from 'react';
-import $ from 'jquery';
-import 'jasmine-ajax';
+import ReactTestUtils from 'react-addons-test-utils';
+import { browserHistory } from 'react-router';
+import { push, syncHistoryWithStore } from 'react-router-redux';
+import configureStore from '../src/sharedResources/store/configureStore';
+
 
 Object.assign(global, {
+  browserHistory,
+  configureStore,
+  syncHistoryWithStore,
   jasmineEnzyme,
   mount,
   React,
-  shallow,
-  $
+  shallow
 });
 
 beforeEach(() => {

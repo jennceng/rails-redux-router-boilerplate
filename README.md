@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+rm -rf .git && git init && git add -A && git commit -m 'Initial commit'
