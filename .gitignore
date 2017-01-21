@@ -15,3 +15,13 @@
 
 # Ignore Byebug command history file.
 .byebug_history
+
+.bundle
+.DS_store
+config/database.yml
+Gemfile.lock
+/node_modules
+/react/coverage/
+npm-debug.log
+.env
+/app/assets/javascripts/bundle.js
